@@ -1,0 +1,28 @@
+{
+  "name": "11ty-with-ts",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rm -rf _site",
+    "==": "========== Build ===========",
+    "build:eleventy": "npx tsx ./node_modules/.bin/eleventy --config=eleventy.config.ts",
+    "build": "npm run clean; npm build:eleventy",
+    "===": "========== Watch ===========",
+    "watch:eleventy": "ENV=development npx tsx ./node_modules/.bin/eleventy --config=eleventy.config.ts --serve",
+    "watch": "npm run clean && npm run watch:eleventy",
+    "debug": "DEBUG=* npm run watch"
+  },
+  "keywords": [],
+  "author": "Carlos Coloma",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@tsconfig/recommended": "^1.0.7",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
