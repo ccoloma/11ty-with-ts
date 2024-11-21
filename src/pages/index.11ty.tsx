@@ -1,5 +1,5 @@
 import React from "react";
-import DefaultLayout from "../_includes/layouts/DefaultLaytout.11ty";
+import DefaultLayout from "../_includes/layouts/DefaultLayout.11ty";
 
 export function render() {
   return (
